@@ -1,0 +1,15 @@
+.backround{
+    background-color: white;
+}
+
+
+.container{
+    width: 67%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+

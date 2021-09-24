@@ -1,0 +1,11 @@
+.header{
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.container {
+    background-color: white;
+    margin-top: 6px;
+    width: 50%;
+}

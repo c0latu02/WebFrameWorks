@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+  width: 61%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.column{
+  display: column;
+  justify-content: space-evenly;
+}  
+
+h2{
+    text-decoration: underline;
+}
