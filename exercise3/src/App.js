@@ -24,7 +24,7 @@ class App extends React.Component {
     <>
       <input type="text" onChange={this.onSearchFieldChange} value={this.state.productSearchString}/>
       <SearchView
-      items={this.state.items.filter((item) => item.name.includes(this.state.productSearchString)) } 
+      items={this.state.items.filter((item) => item.name.toUpperCase().includes(this.state.productSearchString.toUpperCase())) } 
 
       />
     </>
