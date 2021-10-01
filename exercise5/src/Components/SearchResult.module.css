@@ -1,0 +1,69 @@
+.name
+{
+    font-weight: 500;
+    font-size: 15px;
+    color: #0F1111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.type
+{
+    color: #565959;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.product
+{
+    width: 33%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.best
+{ 
+    line-height: 26px; 
+    height: 26px;
+    width: 70px;
+    font-size:12px;
+    background-color: #e67a00;
+    text-align: center;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+    
+}
+
+.triangle
+{
+    content: "";
+    width: 10px;
+    height: 26px;
+    border-right: 10px solid transparent;
+    border-top: 26px solid;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    color: #e67a00; 
+}
+
+img{
+    height: 300px;
+    padding: 50px;
+}
+
+.price{
+    font-size: 36px;
+}
+
+
+sup {
+    top: -.5em;
+    font-size: 14px;
+}
+
+.star{
+    color: yellow;
+}

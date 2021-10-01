@@ -1,0 +1,59 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Apple Watch SE",
+        "type": "Urheiluranneke",
+        "price": 338.90,
+        "rating": 1,
+        "image": "Apple_Watch_SE.png",
+        "status": "Out of stock"
+      },
+      {
+        "id": 2,
+        "name": "Huawei Watch 3 LTE",
+        "type": "Älykello",
+        "price": 398.90,
+        "rating": 0,
+        "image": "Huawei_Watch_3_LTE.png",
+        "status": "Available"
+      },
+      {
+        "id": 3,
+        "name": "OnePlus Watch",
+        "type": "Älykello   ",
+        "price": 159.00,
+        "rating": 3,
+        "image": "OnePlus_Watch.png",
+        "status": "Available"
+      },
+      {
+        "id": 4,
+        "name": "Polar Vantage V2 H10",
+        "type": "Älykello",
+        "price": 549.00,
+        "rating": 5,
+        "image": "Polar_Vantage_V2_H10.png",
+        "status": "Out of stock"
+
+      },
+      {
+        "id": 5,
+        "name": "Samsung Galaxy Watch4 Classic",
+        "type": "Urheiluranneke",
+        "price": 449.00,
+        "rating": 4,
+        "image": "Samsung_Galaxy_Watch4_Classic.png",
+        "status": "Available"
+      },
+      {
+        "id": 6,
+        "name": "Suunto 9 Peak",
+        "type": "Urheilukello",
+        "price": 569.00,
+        "rating": 5,
+        "image": "Suunto_9_Peak.png",
+        "status": "Out of stock"
+      }
+    ]
+  }

@@ -1,16 +1,19 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = 3000;
+const port = 4000;
 const { v4: uuidv4 } = require('uuid');
+const cors = require('cors');
+const productData = require('./data.json');
 
 app.use(bodyParser.json());
+
+app.use(cors());
 
 
 //products table
 
 let products = [{
-    userId: uuidv4(),
     id: uuidv4(), 
     name: 'Lassi', 
     manufacturer: 'China',
@@ -242,7 +245,6 @@ app.delete('/invoices/:id', (req, res) => {
 
 app.post('/invoices/:id/', (req, res) => {
   const userId = user.find(d => d.id === req.params.id);
-  // const productName = products.find(d => d.name === req.body.name);
 
   if (userId !== undefined){
     console.log('Creating new invoice');
@@ -267,7 +269,13 @@ app.post('/invoices/:id/', (req, res) => {
 })   
 
 
+//=======Exercise5=========
 
+app.use(cors());
+
+app.get('/ex5', (req, res) => {
+    res.json(productData);
+})
 
 
 app.listen(port, () => {
