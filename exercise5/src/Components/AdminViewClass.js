@@ -18,9 +18,9 @@ class AdminView extends React.Component {
   }
 
 
-  addAxiosItem = () => {
-    this.props.addAxiosItem(this.state.newItemName, this.state.newItemType, this.state.newItemPrice, this.state.newItemRating, this.state.newItemStatus);
-  }
+  // addAxiosItem = () => {
+  //   this.props.addAxiosItem(this.state.newItemName, this.state.newItemType, this.state.newItemPrice, this.state.newItemRating, this.state.newItemStatus);
+  // }
 
   render() {
     return (
@@ -42,7 +42,7 @@ class AdminView extends React.Component {
             <div>
               Status <input type="text" onChange={ (event) => this.setState({ newItemStatus: event.target.value }) } />
             </div>
-            <button onClick={ this.addNewItem, this.addAxiosItem }>Add Item</button>
+            <button onClick={ this.addNewItem }>Add Item</button>
 
           </div>
           <button onClick={ this.props.disableAdminMode }>Disable Admin Mode</button>

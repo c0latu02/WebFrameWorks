@@ -13,9 +13,9 @@ export default function AdminView(props) {
     props.addNewItem(newItemName, newItemType, newItemPrice, newItemRating, newItemStatus);
   }
 
-  const addAxiosItem = () => {
-    props.addAxiosItem(newItemName, newItemType, newItemPrice, newItemRating, newItemStatus);
-  }
+  // const addAxiosItem = () => {
+  //   props.addAxiosItem(newItemName, newItemType, newItemPrice, newItemRating, newItemStatus);
+  // }
 
   const onDeleteItemClick = (itemId) => {
     console.log("clicked delete for item id " + itemId);
@@ -44,7 +44,7 @@ export default function AdminView(props) {
           <div>
             Status <input type="text" onChange={ (event) => setNewItemStatus(event.target.value) } />
           </div>
-          <button onClick={ addNewItem, addAxiosItem }>Add Item</button>
+          <button onClick={ addNewItem }>Add Item</button>
 
         </div>
         <button onClick={ props.disableAdminMode }>Disable Admin Mode</button>

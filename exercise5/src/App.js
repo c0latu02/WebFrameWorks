@@ -48,28 +48,28 @@ class App extends React.Component {
     });
   }
 
-  addAxiosItem = (name, type, price, rating, status) =>{
-    let newItems = [...this.state.items];
-    axios.
-      post('http://localhost:4000/ex5',{
-        id: newItems.length + 1,
-        name: name,
-        type: type,
-        price: price,
-        rating: rating,
-        status: status
-    },{
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then(response =>{
-      console.log(response);
-    })
-    .catch(err => {
-      console.log(err);
-    });
+  // addAxiosItem = (name, type, price, rating, status) =>{
+  //   let newItems = [...this.state.items];
+  //   axios.
+  //     post('http://localhost:4000/ex5',{
+  //       id: newItems.length + 1,
+  //       name: name,
+  //       type: type,
+  //       price: price,
+  //       rating: rating,
+  //       status: status
+  //   },{
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     }
+  //   }).then(response =>{
+  //     console.log(response);
+  //   })
+  //   .catch(err => {
+  //     console.log(err);
+  //   });
 
-  }
+  // }
 
   deleteItem = itemId => this.setState({items: this.state.items.filter(item => item.id !== itemId)})
 
@@ -93,7 +93,7 @@ class App extends React.Component {
                   addNewItem={ this.addNewItem }
                   items={ this.state.items }                  
                   deleteItem={ this.deleteItem }
-                  addAxiosItem = { this.addAxiosItem }
+                //  addAxiosItem = { this.addAxiosItem }
                />;
     }
 
